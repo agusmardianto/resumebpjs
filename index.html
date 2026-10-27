@@ -63,37 +63,55 @@
         <div class="fields lined">
           <label><span>Kondisi umum</span><textarea name="kondisi_umum" rows="1"></textarea></label>
         </div>
-        <div class="vitals">
+            <div class="vitals">
                 <label>
-                  <span>TD</span>
-                  <input name="td" type="text" value="mmHg">
+                    <span>TD (Tekanan Darah)</span>
+                    <div class="input-unit">
+                        <input name="td" type="text" placeholder="120/80">
+                        <span class="unit">mmHg</span>
+                    </div>
                 </label>
-              
+            
                 <label>
-                  <span>RR</span>
-                  <input name="rr" type="text" value="x/menit">
+                    <span>RR (Frekuensi Napas)</span>
+                    <div class="input-unit">
+                        <input name="rr" type="number" placeholder="20">
+                        <span class="unit">x/menit</span>
+                    </div>
                 </label>
-              
+            
                 <label>
-                  <span>Nadi</span>
-                  <input name="nadi" type="text" value="x/menit">
+                    <span>Nadi</span>
+                    <div class="input-unit">
+                        <input name="nadi" type="number" placeholder="80">
+                        <span class="unit">x/menit</span>
+                    </div>
                 </label>
-              
+            
                 <label>
-                  <span>Suhu</span>
-                  <input name="suhu" type="text" value="°C">
+                    <span>Suhu</span>
+                    <div class="input-unit">
+                        <input name="suhu" type="number" step="0.1" placeholder="36.5">
+                        <span class="unit">°C</span>
+                    </div>
                 </label>
-              
+            
                 <label>
-                  <span>BB</span>
-                  <input name="bb" type="text" value="kg">
+                    <span>BB (Berat Badan)</span>
+                    <div class="input-unit">
+                        <input name="bb" type="number" step="0.1" placeholder="60">
+                        <span class="unit">kg</span>
+                    </div>
                 </label>
-              
+            
                 <label>
-                  <span>TB</span>
-                  <input name="tb" type="text" value="cm">
+                    <span>TB (Tinggi Badan)</span>
+                    <div class="input-unit">
+                        <input name="tb" type="number" step="0.1" placeholder="165">
+                        <span class="unit">cm</span>
+                    </div>
                 </label>
-              </div>
+            </div>
       </section>
 
       <section class="form-section">
