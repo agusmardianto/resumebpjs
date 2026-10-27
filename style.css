@@ -92,24 +92,36 @@ textarea { resize: vertical; line-height: 5.4mm; min-height: 5.4mm; padding-top:
 .stay-date input[type="date"] { width: 31mm; }
 .stay-date input[type="time"] { width: 19mm; }
 .stay-date .short-line { width: 45mm; }
+```css
 .vitals {
-  width: 94mm;
+  width: 110mm;
   margin: 2mm auto 0;
-  display: flex;
-  grid-template-columns: 12mm 29mm 13mm 29mm;
-  gap: 1mm 3mm;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2mm 4mm;
   align-items: end;
 }
-.vitals label { display: contents; }
-.vitals label span { align-self: center; }
-.vitals input { width: 100%; }
-.vitals input::placeholder { color: #aaa; font-size: 7pt; }
-.discharge-section { margin-top: 4mm; }
-.discharge-row {
+
+.vitals label {
   display: grid;
-  grid-template-columns: 55mm 1fr;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  min-height: 7mm;
+  gap: 2mm;
+}
+
+.vitals label > span {
+  align-self: center;
+  white-space: nowrap;
+}
+
+.vitals input {
+  width: 100%;
+  min-width: 0;
+}
+
+.vitals input::placeholder {
+  color: #aaa;
+  font-size: 7pt;
 }
 .field-label { padding-left: 2mm; }
 .discharge-options { display: flex; align-items: center; gap: 2mm; flex-wrap: wrap; }
