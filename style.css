@@ -95,7 +95,7 @@ textarea { resize: vertical; line-height: 5.4mm; min-height: 5.4mm; padding-top:
 .vitals {
   width: 94mm;
   margin: 2mm auto 0;
-  display: grid;
+  display: flex;
   grid-template-columns: 12mm 29mm 13mm 29mm;
   gap: 1mm 3mm;
   align-items: end;
@@ -106,7 +106,7 @@ textarea { resize: vertical; line-height: 5.4mm; min-height: 5.4mm; padding-top:
 .vitals input::placeholder { color: #aaa; font-size: 7pt; }
 .discharge-section { margin-top: 4mm; }
 .discharge-row {
-  display: flex;
+  display: grid;
   grid-template-columns: 55mm 1fr;
   align-items: center;
   min-height: 7mm;
